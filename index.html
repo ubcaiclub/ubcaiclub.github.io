@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UBC AI Club - Advancing Artificial Intelligence at UBC</title>
+    <meta name="description" content="Join UBC AI Club to explore machine learning, deep learning, and artificial intelligence through projects, workshops, and community building at the University of British Columbia.">
+    <style>
+        /* --- Base & Theming --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #dcdce0; /* Light gray text for readability on dark background */
+            background: #1e1e2f; /* Dark purple background */
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        a {
+            color: #c8a2ff; /* Vibrant lavender accent */
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        a:hover {
+            text-decoration: none;
+            opacity: 0.85;
+        }
+
+        /* --- Header --- */
+        .header {
+            text-align: center;
+            border-bottom: 2px solid #4a4a68; /* Softer border color */
+            padding-bottom: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .header h1 {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -1px;
+            color: #ffffff;
+        }
+
+        .header .subtitle {
+            font-size: 18px;
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #a0a0b0;
+        }
+
+        /* --- Navigation Tabs --- */
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid #4a4a68;
+            padding-bottom: 1rem;
+        }
+
+        .nav-tab {
+            padding: 8px 16px;
+            background: none;
+            border: none;
+            font-size: 14px;
+            font-weight: 600;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: #a0a0b0; /* Subdued color for inactive tabs */
+            transition: all 0.3s ease;
+            border-bottom: 2px solid transparent; /* Placeholder for active state */
+        }
+
+        .nav-tab.active {
+            color: #c8a2ff; /* Accent color for active tab */
+            border-bottom: 2px solid #c8a2ff;
+        }
+
+        .nav-tab:hover {
+            color: #c8a2ff;
+        }
+
+        /* --- Main Layout & Sections --- */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+            gap: 2.5rem; /* Increased gap for more breathing room */
+            margin-bottom: 2rem;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        .section h2 {
+            font-size: 18px;
+            font-weight: 700;
+            border-bottom: 1px solid #5a5a78;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #ffffff;
+        }
+
+        .section p, .section li {
+            margin-bottom: 0.75rem;
+            text-align: justify;
+        }
+
+        .section ul {
+            margin-left: 20px;
+            margin-bottom: 1rem;
+        }
+
+        /* --- Item Styling --- */
+        .experience-item, .event-item {
+            margin-bottom: 1rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #3a3852;
+        }
+
+        .experience-item:last-child, .event-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .job-title, .event-title {
+            font-weight: 600;
+            font-size: 16px;
+            color: #f0f0f5;
+        }
+
+        .company, .event-location {
+            font-style: italic;
+            color: #a0a0b0;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .dates {
+            font-size: 12px;
+            color: #888699;
+            float: right;
+        }
+
+        /* --- Page Visibility --- */
+        .page {
+            display: none;
+        }
+
+        .page.active {
+            display: block;
+        }
+
+        /* --- Specific Component Styling --- */
+        .section p, .section li {
+    margin-bottom: 0.75rem;
+    text-align: left; /* Changed from justify */
+}
+
+.bio {
+    text-align: left; /* Changed from justify */
+    line-height: 1.7;
+}
+
+        .photo-placeholder {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .photo-circle {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            color: white;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea, #764ba2); /* Kept original nice gradient */
+        }
+
+        .emoji {
+            font-size: 14px;
+        }
+
+        /* --- Team Page --- */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .team-member {
+            text-align: center;
+            padding: 1.5rem;
+            background: #2b2940; /* Card background slightly lighter than body */
+            border-radius: 12px;
+            border: 1px solid #4a4a68;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .team-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .member-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 28px;
+        }
+
+        .member-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+        }
+
+
+        .member-name {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 0.25rem;
+            color: #ffffff;
+        }
+
+        .member-role {
+            font-style: italic;
+            color: #c8a2ff; /* Using accent for role */
+            font-size: 13px;
+            margin-bottom: 1rem;
+        }
+
+        .member-description {
+            font-size: 12px;
+            text-align: center;
+            line-height: 1.5;
+            color: #a0a0b0;
+        }
+
+        /* --- Responsive Design --- */
+        @media (max-width: 992px) {
+             .main-content {
+                gap: 2rem;
+            }
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            .left-column { order: 2; }
+            .center-column { order: 1; }
+            .right-column { order: 3; }
+
+            body { font-size: 13px; }
+            .header h1 { font-size: 28px; }
+
+            .nav-tabs {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1rem;
+            }
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>UBC AI Club</h1>
+            <div class="subtitle">Advancing Artificial Intelligence through Innovation, Learning, and Community</div>
+        </header>
+
+        <nav class="nav-tabs">
+            <button class="nav-tab active" onclick="showPage('home')">Home</button>
+            <button class="nav-tab" onclick="showPage('team')">Team</button>
+        </nav>
+
+        <div id="home" class="page active">
+            <main class="main-content">
+                <div class="left-column">
+                    <section class="section">
+                        <h2>About</h2>
+                        <div class="member-photo">
+                            <img src="images/club.png" alt="Yash Mali">
+                        </div>
+                        <div class="bio">
+                            <p><span class="emoji">🎓</span> We are a passionate community of students, researchers, and AI enthusiasts at the University of British Columbia. Our mission is to democratize AI knowledge, foster innovation, and help build the next generation of AI leaders by building interest and literacy in the field.</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="center-column">
+                    <section class="section">
+                        <h2>Upcoming Events</h2>
+                        <article class="event-item">
+                            <div class="dates">September 2, 2025</div>
+                            <div class="event-title">Imagine Day <span class="emoji">🌳</span></div>
+                            <div class="event-location">UBC Main Mall</div>
+                            <p><b>Exact location coming soon!</b> <br> Come to our booth to learn about our club!</p>
+                        </article>
+                    </section>
+                </div>
+
+                <div class="right-column">
+                    <section class="section">
+                        <h2>Contact us</h2>
+                        <article class="experience-item">
+                            <div class="job-title">Join our Slack <span class="emoji">📬</span></div>
+                            <p>Invite link coming soon!</p>
+                        </article>
+                        <article class="experience-item">
+                            <div class="job-title">Instagram <span class="emoji">📸</span></div>
+                                <p><a href="https://www.instagram.com/ubcaiclub/" target="_blank">@ubcaiclub</a></p>
+                        </article>
+                        <article class="experience-item">
+                            <div class="job-title">Email <span class="emoji">📧</span></div>
+                            <p><a href="mailto:ubcaiclub@gmail.com">ubcaiclub@gmail.com</a></p>
+                        </article>
+                    </section>
+                </div>
+            </main>
+        </div>
+
+        <div id="team" class="page">
+            <section class="section">
+                <h2>Our Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+    <div class="member-photo">
+        <img src="images/yash.jpg" alt="Yash Mali">
+    </div>
+    <div class="member-name">Yash Mali</div>
+    <div class="member-role">Co-president</div>
+    <div class="member-description"></div>
+</div>
+
+<div class="team-member">
+    <div class="member-photo">
+        <img src="images/antarip.jpeg" alt="Antarip Kashyap">
+    </div>
+    <div class="member-name">Antarip Kashyap</div>
+    <div class="member-role">Co-president</div>
+    <div class="member-description"></div>
+</div>
+
+<div class="team-member">
+    <div class="member-photo">
+        <img src="images/aniket.jpeg" alt="Aniket Nemade">
+    </div>
+    <div class="member-name">Aniket Nemade</div>
+    <div class="member-role">Treasurer</div>
+    <div class="member-description"></div>
+</div>
+
+<div class="team-member">
+    <div class="member-photo">
+        <img src="images/irene.jpeg" alt="Irene Berezin">
+    </div>
+    <div class="member-name">Irene Berezin</div>
+    <div class="member-role">VP of Events</div>
+    <div class="member-description"></div>
+</div>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            // Hide all pages
+            document.querySelectorAll('.page').forEach(page => {
+                page.classList.remove('active');
+            });
+            // Show the target page
+            document.getElementById(pageId).classList.add('active');
+
+            // Update active state on tabs
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.classList.remove('active');
+                // Check if the tab's onclick corresponds to the pageId
+                if (tab.getAttribute('onclick').includes(`'${pageId}'`)) {
+                    tab.classList.add('active');
+                }
+            });
+
+            window.scrollTo(0, 0);
+        }
+
+        // Correctly handle the initial active tab based on the button clicked
+        document.querySelectorAll('.nav-tab').forEach(tab => {
+            tab.addEventListener('click', (event) => {
+                // The pageId is extracted from the onclick attribute
+                const pageId = tab.getAttribute('onclick').match(/'([^']+)'/)[1];
+                showPage(pageId);
+            });
+        });
+
+        // Set initial state without relying on event.target which doesn't exist on load
+        document.addEventListener('DOMContentLoaded', () => {
+           showPage('home'); // or whichever page should be default
+        });
+    </script>
+</body>
+</html>
