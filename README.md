@@ -1,3 +1,1 @@
-# Club Website
-
-## ubcaiclub.github.io
+## [Club Website](https://ubcaiclub.github.io)
