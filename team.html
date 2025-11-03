@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding and responsive viewport configuration -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title and description for SEO -->
     <title>Our Team | UBC AI Club</title>
     <meta name="description" content="Meet the executive team behind the UBC AI Club. Our dedicated students lead workshops, projects, and events for the AI community at UBC.">
+    
+    <!-- Canonical URL and favicon -->
     <link rel="canonical" href="https://ubcaiclub.github.io/team.html" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <!-- Open Graph meta tags for social media sharing -->
     <meta property="og:title" content="Our Team | UBC AI Club" />
     <meta property="og:description" content="Meet the executive team behind the UBC AI Club." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ubcaiclub.github.io/team.html" />
     <meta property="og:image" content="https://ubcaiclub.github.io/images/club.png" />
+    
+    <!-- JSON-LD structured data for team member information -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
+          /* CollectionPage schema: Indicates this page contains a collection of team members */
           "@type": "CollectionPage",
           "@id": "https://ubcaiclub.github.io/team.html",
           "url": "https://ubcaiclub.github.io/team.html",
@@ -24,6 +34,7 @@
           "isPartOf": {"@id": "https://ubcaiclub.github.io/#website"},
           "description": "Meet the executive team of dedicated students who lead the UBC AI Club.",
           "mainEntity": {
+            /* ItemList: Ordered list of team members for search engine understanding */
             "@type": "ItemList",
             "itemListElement": [
               {"@type": "ListItem", "position": 1, "item": {"@id": "https://ubcaiclub.github.io/#yash"}},
@@ -34,6 +45,7 @@
             ]
           }
         },
+        /* Individual Person schemas: Define each team member with their name and role */
         {"@type": "Person", "@id": "https://ubcaiclub.github.io/#yash", "name": "Yash Mali", "jobTitle": "Co-president"},
         {"@type": "Person", "@id": "https://ubcaiclub.github.io/#antarip", "name": "Antarip Kashyap", "jobTitle": "Co-president"},
         {"@type": "Person", "@id": "https://ubcaiclub.github.io/#aniket", "name": "Aniket Nemade", "jobTitle": "Treasurer"},
@@ -43,47 +55,115 @@
     }
     </script>
     <style>
-        /* CSS styles remain the same as the previous version */
+        /* ===== GLOBAL STYLES ===== */
+        /* Reset default browser styles */
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; line-height: 1.6; color: #dcdce0; background: #1e1e2f; font-size: 14px; }
+        
+        /* Body styling with dark theme */
+        body { 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+            line-height: 1.6; 
+            color: #dcdce0; 
+            background: #1e1e2f; 
+            font-size: 14px; 
+        }
+        
+        /* Container centers content with max-width */
         .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        
+        /* Link styling with hover effects */
         a { color: #c8a2ff; text-decoration: none; transition: opacity 0.3s ease; }
         a:hover { text-decoration: none; opacity: 0.85; }
+        
+        /* ===== HEADER SECTION ===== */
         .header { text-align: center; border-bottom: 2px solid #4a4a68; padding-bottom: 1.5rem; margin-bottom: 2rem; }
         .header h1 { font-size: 36px; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -1px; color: #ffffff; }
         .header .subtitle { font-size: 18px; font-style: italic; margin-bottom: 1rem; color: #a0a0b0; }
+        
+        /* ===== NAVIGATION TABS ===== */
         .nav-tabs { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2.5rem; border-bottom: 1px solid #4a4a68; padding-bottom: 1rem; }
-        .nav-tab { padding: 8px 16px; background: none; border: none; font-size: 14px; font-weight: 600; cursor: pointer; text-transform: uppercase; letter-spacing: 0.8px; color: #a0a0b0; transition: all 0.3s ease; border-bottom: 2px solid transparent; }
+        .nav-tab { 
+            padding: 8px 16px; 
+            background: none; 
+            border: none; 
+            font-size: 14px; 
+            font-weight: 600; 
+            cursor: pointer; 
+            text-transform: uppercase; 
+            letter-spacing: 0.8px; 
+            color: #a0a0b0; 
+            transition: all 0.3s ease; 
+            border-bottom: 2px solid transparent; 
+        }
         .nav-tab.active, .nav-tab:hover { color: #c8a2ff; }
         .nav-tab.active { border-bottom: 2px solid #c8a2ff; }
+        
+        /* ===== CONTENT SECTIONS ===== */
         .section { margin-bottom: 2rem; }
-        .section h2 { font-size: 18px; font-weight: 700; border-bottom: 1px solid #5a5a78; padding-bottom: 0.5rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px; color: #ffffff; }
+        .section h2 { 
+            font-size: 18px; 
+            font-weight: 700; 
+            border-bottom: 1px solid #5a5a78; 
+            padding-bottom: 0.5rem; 
+            margin-bottom: 1.5rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            color: #ffffff; 
+        }
+        
+        /* ===== TEAM MEMBER GRID ===== */
+        /* Responsive grid that automatically fits team member cards */
         .team-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 2rem; }
-        .team-member { text-align: center; padding: 1.5rem; background: #2b2940; border-radius: 12px; border: 1px solid #4a4a68; transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        
+        /* Individual team member card with hover animation */
+        .team-member { 
+            text-align: center; 
+            padding: 1.5rem; 
+            background: #2b2940; 
+            border-radius: 12px; 
+            border: 1px solid #4a4a68; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
         .team-member:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+        
+        /* Team member photo styling - circular with fixed dimensions */
         .member-photo { width: 100px; height: 100px; border-radius: 50%; object-fit: cover; margin: 0 auto 1rem; }
         .member-photo img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; display: block; }
+        
+        /* Team member text styling */
         .member-name { font-weight: 600; font-size: 16px; margin-bottom: 0.25rem; color: #ffffff; }
         .member-role { font-style: italic; color: #c8a2ff; font-size: 13px; margin-bottom: 1rem; }
+        
+        /* ===== RESPONSIVE DESIGN ===== */
+        /* Tablet and mobile: stack navigation vertically */
         @media (max-width: 768px) { .nav-tabs { flex-direction: column; gap: 0.5rem; align-items: center; } }
+        
+        /* Small mobile: reduce padding */
         @media (max-width: 480px) { .container { padding: 1rem; } }
     </style>
 </head>
 <body>
+    <!-- Main container that holds all page content -->
     <div class="container">
+        <!-- Header section with club name and tagline -->
         <header class="header">
             <h1>UBC AI Club</h1>
             <div class="subtitle">Advancing Artificial Intelligence through Innovation, Learning, and Community</div>
         </header>
 
+        <!-- Navigation menu with links to different pages -->
         <nav class="nav-tabs">
             <a href="index.html" class="nav-tab">Home</a>
             <a href="team.html" class="nav-tab active">Team</a>
         </nav>
 
+        <!-- Team members section -->
         <section class="section">
             <h2>Our Team</h2>
+            
+            <!-- Responsive grid layout for team member cards -->
             <div class="team-grid">
+                <!-- Team member card: Yash Mali -->
                 <div class="team-member">
                     <div class="member-photo">
                         <img src="images/yash.jpg" alt="Headshot of Yash Mali, Co-president" width="100" height="100">
@@ -91,6 +171,8 @@
                     <div class="member-name">Yash Mali</div>
                     <div class="member-role">Co-president</div>
                 </div>
+                
+                <!-- Team member card: Antarip Kashyap -->
                 <div class="team-member">
                     <div class="member-photo">
                         <img src="images/antarip.jpeg" alt="Headshot of Antarip Kashyap, Co-president" width="100" height="100">
@@ -98,6 +180,8 @@
                     <div class="member-name">Antarip Kashyap</div>
                     <div class="member-role">Co-president</div>
                 </div>
+                
+                <!-- Team member card: Aniket Nemade -->
                 <div class="team-member">
                     <div class="member-photo">
                         <img src="images/aniket.jpeg" alt="Headshot of Aniket Nemade, Treasurer" width="100" height="100">
@@ -105,6 +189,8 @@
                     <div class="member-name">Aniket Nemade</div>
                     <div class="member-role">Treasurer</div>
                 </div>
+                
+                <!-- Team member card: Irene Berezin -->
                 <div class="team-member">
                     <div class="member-photo">
                         <img src="images/irene.jpeg" alt="Headshot of Irene Berezin, VP of Logistics" width="100" height="100">
@@ -112,6 +198,8 @@
                     <div class="member-name">Irene Berezin</div>
                     <div class="member-role">VP of Logistics</div>
                 </div>
+                
+                <!-- Team member card: Leia Chen -->
                 <div class="team-member">
                     <div class="member-photo">
                         <img src="images/leia.jpg" alt="Headshot of Leia Chen, VP of Marketing" width="100" height="100">
