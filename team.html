@@ -21,12 +21,15 @@
     <meta property="og:image" content="https://ubcaiclub.github.io/images/club.png" />
     
     <!-- JSON-LD structured data for team member information -->
+    <!-- This structured data contains: -->
+    <!-- 1. CollectionPage schema: Indicates this page contains a collection of team members -->
+    <!-- 2. ItemList: Ordered list of team members for search engine understanding -->
+    <!-- 3. Individual Person schemas: Define each team member with their name and role -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          /* CollectionPage schema: Indicates this page contains a collection of team members */
           "@type": "CollectionPage",
           "@id": "https://ubcaiclub.github.io/team.html",
           "url": "https://ubcaiclub.github.io/team.html",
@@ -34,7 +37,6 @@
           "isPartOf": {"@id": "https://ubcaiclub.github.io/#website"},
           "description": "Meet the executive team of dedicated students who lead the UBC AI Club.",
           "mainEntity": {
-            /* ItemList: Ordered list of team members for search engine understanding */
             "@type": "ItemList",
             "itemListElement": [
               {"@type": "ListItem", "position": 1, "item": {"@id": "https://ubcaiclub.github.io/#yash"}},
@@ -45,7 +47,6 @@
             ]
           }
         },
-        /* Individual Person schemas: Define each team member with their name and role */
         {"@type": "Person", "@id": "https://ubcaiclub.github.io/#yash", "name": "Yash Mali", "jobTitle": "Co-president"},
         {"@type": "Person", "@id": "https://ubcaiclub.github.io/#antarip", "name": "Antarip Kashyap", "jobTitle": "Co-president"},
         {"@type": "Person", "@id": "https://ubcaiclub.github.io/#aniket", "name": "Aniket Nemade", "jobTitle": "Treasurer"},

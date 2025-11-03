@@ -26,12 +26,15 @@
     <meta name="twitter:description" content="Join our community for AI projects, workshops, and networking at the University of British Columbia." />
     
     <!-- JSON-LD structured data for improved search engine understanding and rich snippets -->
+    <!-- This structured data contains three main schemas: -->
+    <!-- 1. WebSite schema: Defines the main website entity for search engines -->
+    <!-- 2. Organization schema: Provides information about the club as an organization -->
+    <!-- 3. Event schema: Describes upcoming Imagine Day event for search engines and calendar apps -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@graph": [
         {
-          /* WebSite schema: Defines the main website entity for search engines */
           "@type": "WebSite",
           "@id": "https://ubcaiclub.github.io/#website",
           "url": "https://ubcaiclub.github.io/",
@@ -41,7 +44,6 @@
           "inLanguage": "en-US"
         },
         {
-          /* Organization schema: Provides information about the club as an organization */
           "@type": "Organization",
           "@id": "https://ubcaiclub.github.io/#organization",
           "name": "UBC AI Club",
@@ -60,7 +62,6 @@
           }
         },
         {
-          /* Event schema: Describes upcoming Imagine Day event for search engines and calendar apps */
           "@type": "Event",
           "name": "UBC AI Club at Imagine Day 2025",
           "startDate": "2025-09-02T09:00-07:00",
