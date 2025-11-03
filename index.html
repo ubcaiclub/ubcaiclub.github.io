@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding and responsive viewport configuration -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title and description for SEO -->
     <title>UBC AI Club | Artificial Intelligence Community at UBC</title>
     <meta name="description" content="Explore AI, machine learning, and deep learning with the UBC AI Club. Join our community for projects, workshops, and networking at the University of British Columbia.">
+    
+    <!-- Canonical URL and favicon -->
     <link rel="canonical" href="https://ubcaiclub.github.io/" />
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <!-- Open Graph meta tags for social media sharing (Facebook, LinkedIn, etc.) -->
     <meta property="og:title" content="UBC AI Club | Artificial Intelligence Community at UBC" />
     <meta property="og:description" content="Join our community for AI projects, workshops, and networking at the University of British Columbia." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://ubcaiclub.github.io/" />
     <meta property="og:image" content="https://ubcaiclub.github.io/images/club.png" />
+    
+    <!-- Twitter Card meta tags for Twitter sharing -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="UBC AI Club | Artificial Intelligence Community at UBC" />
     <meta name="twitter:description" content="Join our community for AI projects, workshops, and networking at the University of British Columbia." />
+    
+    <!-- JSON-LD structured data for improved search engine understanding and rich snippets -->
+    <!-- This structured data contains three main schemas: -->
+    <!-- 1. WebSite schema: Defines the main website entity for search engines -->
+    <!-- 2. Organization schema: Provides information about the club as an organization -->
+    <!-- 3. Event schema: Describes upcoming Imagine Day event for search engines and calendar apps -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -34,8 +49,9 @@
           "name": "UBC AI Club",
           "url": "https://ubcaiclub.github.io/",
           "logo": "https://ubcaiclub.github.io/images/club.png",
-          "Point": {
-            "Type": "General inquiries",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "General inquiries",
             "email": "ubcaiclub@gmail.com"
           },
           "sameAs": ["https://www.instagram.com/ubcaiclub/"],
@@ -65,48 +81,279 @@
     }
     </script>
     <style>
-        /* CSS styles remain the same as the previous version */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; line-height: 1.6; color: #dcdce0; background: #1e1e2f; font-size: 14px; }
-        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-        a { color: #c8a2ff; text-decoration: none; transition: opacity 0.3s ease; }
-        a:hover { text-decoration: none; opacity: 0.85; }
-        h3 { font-size: 16px; font-weight: 600; color: #f0f0f5; margin-bottom: 0.25rem; }
-        .header { text-align: center; border-bottom: 2px solid #4a4a68; padding-bottom: 1.5rem; margin-bottom: 2rem; }
-        .header h1 { font-size: 36px; font-weight: 700; margin-bottom: 0.5rem; letter-spacing: -1px; color: #ffffff; }
-        .header .subtitle { font-size: 18px; font-style: italic; margin-bottom: 1rem; color: #a0a0b0; }
-        .nav-tabs { display: flex; justify-content: center; gap: 2rem; margin-bottom: 2.5rem; border-bottom: 1px solid #4a4a68; padding-bottom: 1rem; }
-        .nav-tab { padding: 8px 16px; background: none; border: none; font-size: 14px; font-weight: 600; cursor: pointer; text-transform: uppercase; letter-spacing: 0.8px; color: #a0a0b0; transition: all 0.3s ease; border-bottom: 2px solid transparent; }
-        .nav-tab.active, .nav-tab:hover { color: #c8a2ff; }
-        .nav-tab.active { border-bottom: 2px solid #c8a2ff; }
-        .main-content { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 2.5rem; margin-bottom: 2rem; }
-        .section { margin-bottom: 2rem; }
-        .section h2 { font-size: 18px; font-weight: 700; border-bottom: 1px solid #5a5a78; padding-bottom: 0.5rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px; color: #ffffff; }
-        .section p, .section li { margin-bottom: 0.75rem; text-align: left; }
-        .experience-item, .event-item { margin-bottom: 1rem; padding-bottom: 1.5rem; border-bottom: 1px solid #3a3852; }
-        .experience-item:last-child, .event-item:last-child { border-bottom: none; padding-bottom: 0; margin-bottom: 0; }
-        .event-title { font-weight: 600; font-size: 16px; color: #f0f0f5; }
-        .event-location { font-style: italic; color: #a0a0b0; margin-bottom: 0.5rem; display: block; }
-        .dates { font-size: 12px; color: #888699; float: right; }
-        .bio { text-align: left; line-height: 1.7; }
-        .emoji { font-size: 14px; }
-        @media (max-width: 768px) { .main-content { grid-template-columns: 1fr; } .left-column { order: 2; } .center-column { order: 1; } .right-column { order: 3; } body { font-size: 13px; } .header h1 { font-size: 28px; } .nav-tabs { flex-direction: column; gap: 0.5rem; align-items: center; } }
-        @media (max-width: 480px) { .container { padding: 1rem; } }
+        /* ===== GLOBAL STYLES ===== */
+        /* Reset default browser styles for consistent rendering across browsers */
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        
+        /* Body styling with modern dark gradient background */
+        body { 
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; 
+            line-height: 1.7; 
+            color: #e0e0e8; 
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            font-size: 15px; 
+        }
+        
+        /* Container centers content with max-width for readability */
+        .container { 
+            max-width: 1240px; 
+            margin: 0 auto; 
+            padding: 2.5rem 2rem; 
+        }
+        
+        /* Link styling with smooth hover transition and modern color */
+        a { 
+            color: #a78bfa; 
+            text-decoration: none; 
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        a:hover { 
+            color: #c4b5fd; 
+            transform: translateY(-1px);
+        }
+        
+        /* Heading styles */
+        h3 { 
+            font-size: 17px; 
+            font-weight: 600; 
+            color: #f5f5f7; 
+            margin-bottom: 0.5rem; 
+        }
+        
+        /* ===== HEADER SECTION ===== */
+        /* Main header with centered text and modern styling */
+        .header { 
+            text-align: center; 
+            padding-bottom: 2rem; 
+            margin-bottom: 3rem; 
+            position: relative;
+        }
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 120px;
+            height: 3px;
+            background: linear-gradient(90deg, #a78bfa, #6366f1);
+            border-radius: 2px;
+        }
+        .header h1 { 
+            font-size: 48px; 
+            font-weight: 800; 
+            margin-bottom: 0.75rem; 
+            letter-spacing: -1.5px; 
+            color: #ffffff;
+            background: linear-gradient(135deg, #ffffff 0%, #e0e0e8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .header .subtitle { 
+            font-size: 19px; 
+            font-weight: 400;
+            font-style: normal;
+            margin-bottom: 1rem; 
+            color: #b4b4c4;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        /* ===== NAVIGATION TABS ===== */
+        /* Horizontal navigation with modern pill style */
+        .nav-tabs { 
+            display: flex; 
+            justify-content: center; 
+            gap: 1rem; 
+            margin-bottom: 3rem; 
+            padding: 0.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .nav-tab { 
+            padding: 12px 28px; 
+            background: transparent; 
+            border: none; 
+            font-size: 14px; 
+            font-weight: 600; 
+            cursor: pointer; 
+            text-transform: uppercase; 
+            letter-spacing: 1px; 
+            color: #b4b4c4; 
+            transition: all 0.3s ease; 
+            border-radius: 8px;
+            position: relative;
+        }
+        .nav-tab:hover { 
+            color: #e0e0e8;
+            background: rgba(255, 255, 255, 0.05);
+        }
+        .nav-tab.active { 
+            color: #ffffff;
+            background: linear-gradient(135deg, #8b5cf6, #6366f1);
+            box-shadow: 0 4px 12px rgba(139, 92, 246, 0.3);
+        }
+        
+        /* ===== MAIN CONTENT LAYOUT ===== */
+        /* Three-column grid layout with better spacing */
+        .main-content { 
+            display: grid; 
+            grid-template-columns: 1fr 2fr 1fr; 
+            gap: 2rem; 
+            margin-bottom: 2rem; 
+        }
+        
+        /* ===== CONTENT SECTIONS ===== */
+        .section { 
+            margin-bottom: 2rem;
+            background: rgba(255, 255, 255, 0.02);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(10px);
+        }
+        .section h2 { 
+            font-size: 16px; 
+            font-weight: 700; 
+            padding-bottom: 1rem; 
+            margin-bottom: 1.5rem; 
+            text-transform: uppercase; 
+            letter-spacing: 1.5px; 
+            color: #ffffff;
+            position: relative;
+        }
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: linear-gradient(90deg, #a78bfa, #6366f1);
+            border-radius: 2px;
+        }
+        .section p, .section li { 
+            margin-bottom: 0.75rem; 
+            text-align: left;
+            line-height: 1.8;
+        }
+        
+        /* ===== EVENT AND EXPERIENCE ITEMS ===== */
+        /* Individual event/experience cards with modern styling */
+        .experience-item, .event-item { 
+            margin-bottom: 1.5rem; 
+            padding: 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .experience-item:hover, .event-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(167, 139, 250, 0.3);
+            transform: translateY(-2px);
+        }
+        .experience-item:last-child, .event-item:last-child { 
+            margin-bottom: 0; 
+        }
+        .event-title { 
+            font-weight: 700; 
+            font-size: 18px; 
+            color: #f5f5f7;
+            margin-bottom: 0.5rem;
+        }
+        .event-location { 
+            font-style: italic; 
+            color: #a78bfa; 
+            margin-bottom: 0.75rem; 
+            display: block;
+            font-size: 14px;
+        }
+        .dates { 
+            font-size: 12px; 
+            color: #9ca3af;
+            float: right;
+            background: rgba(167, 139, 250, 0.1);
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-weight: 500;
+        }
+        
+        /* ===== MISCELLANEOUS ===== */
+        .bio { 
+            text-align: left; 
+            line-height: 1.8;
+        }
+        .emoji { 
+            font-size: 18px;
+            display: inline-block;
+            margin-left: 4px;
+        }
+        
+        /* ===== RESPONSIVE DESIGN ===== */
+        /* Tablet and mobile layout: switch to single column and reorder sections */
+        @media (max-width: 768px) { 
+            .main-content { grid-template-columns: 1fr; } 
+            .left-column { order: 2; } 
+            .center-column { order: 1; } 
+            .right-column { order: 3; } 
+            body { font-size: 14px; } 
+            .header h1 { font-size: 36px; }
+            .header .subtitle { font-size: 16px; }
+            .nav-tabs { 
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 0.75rem; 
+                padding: 0.5rem;
+            }
+            .nav-tab {
+                padding: 10px 20px;
+                font-size: 13px;
+            }
+            .section {
+                padding: 1.5rem;
+            }
+        }
+        
+        /* Small mobile devices: reduce padding */
+        @media (max-width: 480px) { 
+            .container { padding: 1.5rem 1rem; }
+            .header h1 { font-size: 32px; }
+            .section {
+                padding: 1.25rem;
+            }
+        }
     </style>
 </head>
 <body>
+    <!-- Main container that holds all page content -->
     <div class="container">
+        <!-- Header section with club name and tagline -->
         <header class="header">
             <h1>UBC AI Club</h1>
             <div class="subtitle">Advancing Artificial Intelligence through Innovation, Learning, and Community</div>
         </header>
 
+        <!-- Navigation menu with links to different pages -->
         <nav class="nav-tabs">
             <a href="index.html" class="nav-tab active">Home</a>
             <a href="team.html" class="nav-tab">Team</a>
         </nav>
 
+        <!-- Main content area with three-column layout -->
         <main class="main-content">
+            <!-- Left column: About Us section -->
             <div class="left-column">
                 <section class="section">
                     <h2>About Us</h2>
@@ -117,9 +364,12 @@
                 </section>
             </div>
 
+            <!-- Center column: Upcoming Events section -->
             <div class="center-column">
                 <section class="section">
                     <h2>Upcoming Events</h2>
+                    
+                    <!-- Event card: Imagine Day -->
                     <article class="event-item">
                         <div class="dates">September 2, 2025</div>
                         <div class="event-title">Imagine Day <span class="emoji">🌳</span></div>
@@ -127,6 +377,7 @@
                         <p><strong>On Main Mall, outside the Earth Sciences Building. </strong> <br> Come to our booth to learn about our club, meet the executive team, and see what we have planned for the year!</p>
                     </article>
 
+                    <!-- Event card: ML Reading Group -->
                     <article class="event-item">
                         <div class="dates"></div>
                         <div class="event-title">ML Reading Group <span class="emoji">📚</span></div>
@@ -137,19 +388,23 @@
                 </section>
             </div>
 
-            
-
+            <!-- Right column: Contact information section -->
             <div class="right-column">
                 <section class="section">
                     <h2>Contact Us</h2>
-                    <!-- <article class="experience-item">
+                    <!-- Commented out: Slack invitation (coming soon)
+                    <article class="experience-item">
                         <h3>Join our Slack <span class="emoji">📬</span></h3>
                         <p>Invite link coming soon!</p>
                     </article> -->
+                    
+                    <!-- Contact method: Instagram -->
                     <article class="experience-item">
                         <h3>Instagram <span class="emoji">📸</span></h3>
                         <p><a href="https://www.instagram.com/ubcaiclub/" target="_blank" rel="noopener noreferrer">@ubcaiclub</a></p>
                     </article>
+                    
+                    <!-- Contact method: Email -->
                     <article class="experience-item">
                         <h3>Email <span class="emoji">📧</span></h3>
                         <p><a href="mailto:ubcaiclub@gmail.com">ubcaiclub@gmail.com</a></p>
