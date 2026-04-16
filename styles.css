@@ -140,32 +140,44 @@ body .quarto-container {
 /* Team Section */
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 1.5rem;
-    margin: 2rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
     justify-content: center;
 }
 
 .team-member {
     text-align: center;
-    padding: 1.2rem;
-    background: #2b2940;
-    border-radius: 12px;
-    border: 1px solid #4a4a68;
-    transition: transform 0.3s ease;
+    padding: 2rem 1.5rem;
+    background: rgba(43, 41, 64, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .team-member:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+    background: rgba(200, 162, 255, 0.1);
+    border-color: rgba(200, 162, 255, 0.4);
+    box-shadow: 0 15px 45px rgba(200, 162, 255, 0.2);
 }
 
 .member-photo {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto 0.8rem;
+    margin: 0 auto 1.5rem;
     overflow: hidden;
+    border: 3px solid rgba(200, 162, 255, 0.2);
+    transition: transform 0.4s ease;
+}
+
+.team-member:hover .member-photo {
+    transform: scale(1.05);
+    border-color: rgba(0, 242, 254, 0.6);
 }
 
 .member-photo img {
@@ -176,13 +188,26 @@ body .quarto-container {
 }
 
 .member-name {
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 700;
+    font-size: 1.25rem;
     color: #ffffff;
+    margin-bottom: 0.5rem;
+}
+
+.member-name a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.member-name a:hover {
+    color: #00f2fe;
 }
 
 .member-role {
-    font-style: italic;
+    font-weight: 500;
     color: #c8a2ff;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
