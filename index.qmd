@@ -9,7 +9,7 @@ subtitle: "Advancing Artificial Intelligence through Innovation, Learning, and C
 
 ::: {.grid}
 
-::: {.g-col-12 .g-col-md-4}
+::: {.g-col-12 .g-col-lg-3}
 ## About Us
 
 ### Our Mission 🚀
