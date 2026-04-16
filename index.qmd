@@ -54,7 +54,7 @@ Join us for an insightful session on the intersection of healthcare and artifici
 :::
 :::
 
-::: {.g-col-12 .g-col-lg-3}
+::: {.g-col-12 .g-col-md-4}
 ## Contact Us
 
 ### Instagram 📸
@@ -71,3 +71,4 @@ Please use this email address for any inquiries or feedback. Please follow up af
 :::
 
 :::
+
