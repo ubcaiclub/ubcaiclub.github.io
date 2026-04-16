@@ -18,7 +18,7 @@ subtitle: "Advancing Artificial Intelligence through Innovation, Learning, and C
 [Meet our Team →](team.qmd)
 :::
 
-::: {.g-col-12 .g-col-md-4}
+::: {.g-col-12 .g-col-md-6}
 ## Past Events
 
 ::: {.event-item}
