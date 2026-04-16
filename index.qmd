@@ -58,7 +58,9 @@ Join us for an insightful session on the intersection of healthcare and artifici
 ## Contact Us
 
 ### Instagram 📸
-For up to date events, please see our instagram: [@ubcaiclub](https://www.instagram.com/ubcaiclub/)
+For up to date events, please see our instagram: 
+
+[@ubcaiclub](https://www.instagram.com/ubcaiclub/){.neon-button}
 
 This website is updated after our events. 
 
