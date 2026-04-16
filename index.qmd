@@ -35,9 +35,6 @@ We read papers, explore projects, and teach fundamentals of modern machine learn
 :::
 
 ::: {.event-item}
-::: {.dates}
-September 2, 2025
-:::
 **Imagine Day** 🌳
 *UBC Main Mall*
 
