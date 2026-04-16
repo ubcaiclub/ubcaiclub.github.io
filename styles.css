@@ -10,6 +10,36 @@ h1, h2, h3, .header, .text-center, .quarto-announcement, .quarto-title-block, .t
     text-align: center;
 }
 
+h2 {
+    background: linear-gradient(90deg, #00f2fe 0%, #c8a2ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+    display: inline-block; /* Helps center the gradient properly */
+    width: 100%;
+}
+
+.neon-button {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    background: rgba(200, 162, 255, 0.05);
+    color: #c8a2ff !important;
+    text-decoration: none !important;
+    font-weight: 600;
+    border: 1px solid rgba(200, 162, 255, 0.3);
+    box-shadow: 0 0 10px rgba(200, 162, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.neon-button:hover {
+    background: rgba(200, 162, 255, 0.15);
+    box-shadow: 0 0 20px rgba(200, 162, 255, 0.6);
+    transform: translateY(-2px);
+}
+
 /* Paragraphs and lists should be left-aligned for readability */
 p, li, .bio, .event-item {
     text-align: left;

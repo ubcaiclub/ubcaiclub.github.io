@@ -8,8 +8,8 @@ title: "Our Team"
 ::: {.member-photo}
 ![](images/yash.jpg)
 :::
-::: {.member-name}
-Yash Mali
+::: {.member-name}for now
+[Yash Mali](https://yashm8.github.io/)
 :::
 ::: {.member-role}
 Co-president

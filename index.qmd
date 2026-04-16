@@ -65,9 +65,11 @@ For up to date events, please see our instagram: [@ubcaiclub](https://www.instag
 This website is updated after our events. 
 
 ### Email 📧
-[ubcaiclub@gmail.com](mailto:ubcaiclub@gmail.com)
+[ubcaiclub@gmail.com](mailto:ubcaiclub@gmail.com){.neon-button}
 
-Please use this email address for any inquiries or feedback. Please follow up after a week if you have not received a response. We look forward to hearing from you!
+Please use this email address
+ for any inquiries or feedback. Please follow up after a week if you have not received a response. We look forward to hearing from you!
 :::
 
 :::
+
