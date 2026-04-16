@@ -15,30 +15,30 @@ p, li, .bio, .event-item {
     text-align: left;
 }
 
-.quarto-announcement {
-    background-color: #2b2940 !important; /* Dark grey, not blue */
-    color: #ffffff !important;
-    padding: 0.25rem 0 !important; /* Thinner */
-    font-size: 1.2rem !important; /* Bigger text */
+#quarto-announcement.alert {
+    background-color: #2b2940; /* Dark grey, not blue */
+    color: #ffffff;
+    padding: 0.25rem 0; /* Thinner */
+    font-size: 1.2rem; /* Bigger text */
 }
 
-.quarto-announcement a {
-    color: #c8a2ff !important;
+#quarto-announcement.alert a {
+    color: #c8a2ff;
     text-decoration: underline;
     font-weight: bold;
 }
 
 /* Navbar adjustments */
-.navbar {
-    background-color: #1e1e2f !important; /* Match body background */
+#quarto-header .navbar {
+    background-color: #1e1e2f; /* Match body background */
     border-bottom: 1px solid #4a4a68;
-    padding-top: 0.2rem !important;
-    padding-bottom: 0.2rem !important;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
 }
 
-.navbar-brand {
-    font-size: 1.4rem !important;
-    font-weight: 700 !important;
+#quarto-header .navbar-brand {
+    font-size: 1.4rem;
+    font-weight: 700;
 }
 
 .container-fluid {
@@ -47,9 +47,9 @@ p, li, .bio, .event-item {
     padding: 1rem 2rem;
 }
 
-.quarto-container {
-    max-width: 95% !important;
-    margin: 0 auto !important;
+body .quarto-container {
+    max-width: 95%;
+    margin: 0 auto;
 }
 
 .header {

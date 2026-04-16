@@ -4,7 +4,7 @@ subtitle: "Advancing Artificial Intelligence through Innovation, Learning, and C
 ---
 
 ::: {.hero-banner}
-![](images/vanc.avif)
+![Vancouver Skyline](images/vanc.avif)
 :::
 
 ::: {.grid}
