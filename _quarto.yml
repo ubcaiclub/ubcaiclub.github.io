@@ -10,6 +10,9 @@ website:
     type: primary
     dismissable: true
   navbar:
+    left:
+      - href: team.qmd
+        text: Meet our Team
     center:
       - href: index.qmd
         text: Home
