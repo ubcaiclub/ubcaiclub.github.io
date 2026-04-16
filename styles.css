@@ -42,13 +42,13 @@ p, li, .bio, .event-item {
 }
 
 .container-fluid {
-    max-width: 1800px;
+    max-width: 95%;
     margin: 0 auto;
     padding: 1rem 2rem;
 }
 
 .quarto-container {
-    max-width: 1800px !important;
+    max-width: 95% !important;
     margin: 0 auto !important;
 }
 
