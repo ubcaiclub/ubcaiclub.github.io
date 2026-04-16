@@ -108,6 +108,14 @@ body .quarto-container {
     border-radius: 15px;
 }
 
+.hero-banner img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: bottom;
+    display: block;
+}
+
 .grid {
     margin-top: 0 !important;
 }
