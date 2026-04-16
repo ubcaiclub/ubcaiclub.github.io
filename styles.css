@@ -84,7 +84,7 @@ p, li, .bio, .event-item {
     width: 100%;
     height: 450px;
     object-fit: cover;
-    object-position: top;
+    object-position: bottom;
     display: block;
 }
 
