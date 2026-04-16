@@ -82,24 +82,14 @@ p, li, .bio, .event-item {
 
 .hero-banner img {
     width: 100%;
-    height: auto;
-    max-height: 600px;
-    object-fit: contain;
-    background: #1e1e2f;
+    height: 450px;
+    object-fit: cover;
+    object-position: top;
     display: block;
 }
 
 .grid {
     justify-content: center;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 2rem;
-}
-
-@media (max-width: 992px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
 }
 
 /* Events and items */
