@@ -3,6 +3,10 @@ title: "UBC AI Club"
 subtitle: "Advancing Artificial Intelligence through Innovation, Learning, and Community"
 ---
 
+::: {.hero-banner}
+![](images/vanc.avif)
+:::
+
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-4}
