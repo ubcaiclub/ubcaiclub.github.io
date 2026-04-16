@@ -103,21 +103,17 @@ body .quarto-container {
 
 .hero-banner {
     width: 100%;
-    margin-bottom: 2rem;
+    margin-bottom: 0.2rem;
     overflow: hidden;
     border-radius: 15px;
 }
 
-.hero-banner img {
-    width: 100%;
-    height: 450px;
-    object-fit: cover;
-    object-position: bottom;
-    display: block;
+.grid {
+    margin-top: 0 !important;
 }
 
-.grid {
-    /* Let Quarto handle the grid display and width */
+.quarto-page-contents {
+    padding-top: 0 !important;
 }
 
 /* Events and items */
