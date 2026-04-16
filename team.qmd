@@ -8,7 +8,7 @@ title: "Our Team"
 ::: {.member-photo}
 ![](images/yash.jpg)
 :::
-::: {.member-name}for now
+::: {.member-name}
 [Yash Mali](https://yashm8.github.io/)
 :::
 ::: {.member-role}
