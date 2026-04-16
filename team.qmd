@@ -18,16 +18,14 @@ Co-president
 
 ::: {.team-member}
 ::: {.member-photo}
-![](images/leia.jpg)
+![](images/antarip.jpeg)
 :::
 ::: {.member-name}
-Leia Chen
+Antarip Kashyap
 :::
 ::: {.member-role}
-VP of Marketing
+Co-president
 :::
-:::
-
 :::
 
 ::: {.team-member}
@@ -54,3 +52,16 @@ VP of Logistics
 :::
 :::
 
+::: {.team-member}
+::: {.member-photo}
+![](images/leia.jpg)
+:::
+::: {.member-name}
+Leia Chen
+:::
+::: {.member-role}
+VP of Marketing
+:::
+:::
+
+:::
