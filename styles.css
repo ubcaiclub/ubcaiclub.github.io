@@ -11,11 +11,9 @@ h1, h2, h3, .header, .text-center, .quarto-announcement, .quarto-title-block, .t
 }
 
 h2 {
-    background: linear-gradient(90deg, #00f2fe 0%, #c8a2ff 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 1.5rem;
-    display: inline-block; /* Helps center the gradient properly */
+    color: #ffffff;
+    margin-bottom: 1rem;
+    display: inline-block;
     width: 100%;
 }
 
