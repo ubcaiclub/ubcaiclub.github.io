@@ -5,6 +5,7 @@ subtitle: "Advancing Artificial Intelligence through Innovation, Learning, and C
 
 ::: {.hero-banner}
 ![Vancouver Skyline](images/vanc.avif)
+<div style="text-align: right; font-size: 0.85rem; color: #888699; padding: 5px 15px 0 0;">Photo Credit: Anthony Maw</div>
 :::
 
 ::: {.grid}
@@ -52,6 +53,7 @@ Come to our booth to learn about our club, meet the executive team, and see what
 
 Join us for an insightful session on the intersection of healthcare and artificial intelligence.
 :::
+
 :::
 
 ::: {.g-col-12 .g-col-md-3}
@@ -60,20 +62,12 @@ Join us for an insightful session on the intersection of healthcare and artifici
 ### Instagram 📸
 For up to date events, please see our instagram:[@ubcaiclub](https://www.instagram.com/ubcaiclub/)
 
-
 This website is updated after our events. 
 
 ### Email 📧
 [ubcaiclub@gmail.com](mailto:ubcaiclub@gmail.com)
 
-
 Please use this email address for any inquiries or feedback. Please follow up after a week if you have not received a response. We look forward to hearing from you!
 :::
 
 :::
-
-back. Please follow up after a week if you have not received a response. We look forward to hearing from you!
-:::
-
-:::
-
