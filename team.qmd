@@ -1,0 +1,67 @@
+---
+title: "Our Team"
+---
+
+::: {.team-grid}
+
+::: {.team-member}
+::: {.member-photo}
+![](images/yash.jpg)
+:::
+::: {.member-name}
+Yash Mali
+:::
+::: {.member-role}
+Co-president
+:::
+:::
+
+::: {.team-member}
+::: {.member-photo}
+![](images/antarip.jpeg)
+:::
+::: {.member-name}
+Antarip Kashyap
+:::
+::: {.member-role}
+Co-president
+:::
+:::
+
+::: {.team-member}
+::: {.member-photo}
+![](images/aniket.jpeg)
+:::
+::: {.member-name}
+Aniket Nemade
+:::
+::: {.member-role}
+Treasurer
+:::
+:::
+
+::: {.team-member}
+::: {.member-photo}
+![](images/irene.jpeg)
+:::
+::: {.member-name}
+Irene Berezin
+:::
+::: {.member-role}
+VP of Logistics
+:::
+:::
+
+::: {.team-member}
+::: {.member-photo}
+![](images/leia.jpg)
+:::
+::: {.member-name}
+Leia Chen
+:::
+::: {.member-role}
+VP of Marketing
+:::
+:::
+
+:::

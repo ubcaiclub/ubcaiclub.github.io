@@ -1,0 +1,69 @@
+---
+title: "UBC AI Club"
+subtitle: "Advancing Artificial Intelligence through Innovation, Learning, and Community"
+---
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+## About Us
+
+### Our Mission 🚀
+🎓 We are a passionate community of students, researchers, and AI enthusiasts at the University of British Columbia. Our mission is to democratize AI knowledge, foster innovation, and help build the next generation of AI leaders by building interest and literacy in the field.
+
+[Meet our Team →](team.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-4}
+## Past Events
+
+::: {.event-item}
+**Accenture x BOLT x UBC Networking Night** 🤝
+*Networking Event*
+
+Connect with industry professionals and explore career opportunities in AI and technology.
+:::
+
+::: {.event-item}
+**ML Reading Group** 📚
+*UBC Libraries*
+
+We read papers, explore projects, and teach fundamentals of modern machine learning.
+:::
+
+::: {.event-item}
+::: {.dates}
+September 2, 2025
+:::
+**Imagine Day** 🌳
+*UBC Main Mall*
+
+**On Main Mall, outside the Earth Sciences Building.**
+Come to our booth to learn about our club, meet the executive team, and see what we have planned for the year!
+:::
+
+::: {.event-item}
+**USS x UBC AI Club Healthcare AI Speaker** 🏥
+*Speaker Series*
+
+Join us for an insightful session on the intersection of healthcare and artificial intelligence.
+:::
+:::
+
+::: {.g-col-12 .g-col-md-4}
+## Contact Us
+
+### Instagram 📸
+For up to date events, please see our instagram:[@ubcaiclub](https://www.instagram.com/ubcaiclub/)
+
+
+This website is updated after our events. 
+
+### Email 📧
+[ubcaiclub@gmail.com](mailto:ubcaiclub@gmail.com)
+
+
+Please use this email address for any inquiries or feedback. Please follow up after a week if you have not received a response. We look forward to hearing from you!
+:::
+
+:::

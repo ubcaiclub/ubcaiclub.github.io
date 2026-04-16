@@ -1,0 +1,143 @@
+/* Custom styles for UBC AI Club */
+body {
+    background: #1e1e2f;
+    color: #dcdce0;
+    font-family: "et-book", Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+}
+
+/* Center only headings and specific containers */
+h1, h2, h3, .header, .text-center, .quarto-announcement, .quarto-title-block, .title, .subtitle {
+    text-align: center;
+}
+
+/* Paragraphs and lists should be left-aligned for readability */
+p, li, .bio, .event-item {
+    text-align: left;
+}
+
+.quarto-announcement {
+    background-color: #2b2940 !important; /* Dark grey, not blue */
+    color: #ffffff !important;
+    padding: 0.25rem 0 !important; /* Thinner */
+    font-size: 1.2rem !important; /* Bigger text */
+}
+
+.quarto-announcement a {
+    color: #c8a2ff !important;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Navbar adjustments */
+.navbar {
+    background-color: #1e1e2f !important; /* Match body background */
+    border-bottom: 1px solid #4a4a68;
+    padding-top: 0.2rem !important;
+    padding-bottom: 0.2rem !important;
+}
+
+.navbar-brand {
+    font-size: 1.4rem !important;
+    font-weight: 700 !important;
+}
+
+.container-fluid {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+}
+
+.quarto-container {
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+}
+
+.header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #4a4a68;
+    margin-bottom: 2rem;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+    letter-spacing: -1px;
+    color: #ffffff;
+}
+
+.header .subtitle {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #a0a0b0;
+}
+
+.grid {
+    justify-content: center;
+}
+
+/* Events and items */
+.event-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #3a3852;
+}
+
+.dates {
+    font-size: 0.85rem;
+    color: #888699;
+    display: block;
+    margin-bottom: 0.25rem;
+    text-align: left;
+}
+
+/* Team Section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    padding: 1.2rem;
+    background: #2b2940;
+    border-radius: 12px;
+    border: 1px solid #4a4a68;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.member-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 0.8rem;
+    overflow: hidden;
+}
+
+.member-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.member-name {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.member-role {
+    font-style: italic;
+    color: #c8a2ff;
+    font-size: 0.9rem;
+}

@@ -1,0 +1,24 @@
+project:
+  type: website
+  output-dir: .
+
+website:
+  title: "UBC AI Club"
+  search: false
+  announcement:
+    content: "See [Instagram](https://www.instagram.com/ubcaiclub/) for the latest events and updates! 📸"
+    type: primary
+    dismissable: true
+  navbar:
+    center:
+      - href: index.qmd
+        text: Home
+      - href: team.qmd
+        text: Team
+
+format:
+  html:
+    theme: darkly
+    css: styles.css
+    toc: false
+    page-layout: full
