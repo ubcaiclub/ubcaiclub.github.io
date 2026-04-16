@@ -3,9 +3,8 @@ title: ""
 ---
 
 ::: {.hero-banner}
-![Vancouver Skyline](images/vanc.avif)
+![Photo Credit: Anthony Maw](images/vanc.avif)
 :::
-<div style="text-align: right; font-size: 0.75rem; color: #888699; margin-top: -1.5rem; margin-bottom: 0.5rem; padding-right: 5px;">Photo Credit: Anthony Maw</div>
 
 ::: {.grid}
 
