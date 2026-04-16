@@ -18,13 +18,13 @@ Co-president
 
 ::: {.team-member}
 ::: {.member-photo}
-![](images/antarip.jpeg)
+![](images/leia.jpg)
 :::
 ::: {.member-name}
-Antarip Kashyap
+Leia Chen
 :::
 ::: {.member-role}
-Co-president
+VP of Marketing
 :::
 :::
 
@@ -49,18 +49,6 @@ Irene Berezin
 :::
 ::: {.member-role}
 VP of Logistics
-:::
-:::
-
-::: {.team-member}
-::: {.member-photo}
-![](images/leia.jpg)
-:::
-::: {.member-name}
-Leia Chen
-:::
-::: {.member-role}
-VP of Marketing
 :::
 :::
 
