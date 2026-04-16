@@ -89,7 +89,7 @@ body .quarto-container {
 }
 
 .grid {
-    justify-content: center;
+    /* Let Quarto handle the grid display and width */
 }
 
 /* Events and items */
