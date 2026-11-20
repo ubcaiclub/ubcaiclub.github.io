@@ -213,3 +213,25 @@ body .quarto-container {
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
+
+/* "Coming soon" placeholder card */
+.team-member.coming-soon {
+    border-style: dashed;
+    border-color: rgba(200, 162, 255, 0.3);
+}
+
+.placeholder-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(200, 162, 255, 0.08);
+    border-style: dashed;
+}
+
+.placeholder-photo p {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #c8a2ff;
+    text-align: center;
+}

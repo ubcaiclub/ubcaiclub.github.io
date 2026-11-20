@@ -6,25 +6,13 @@ title: "Our Team"
 
 ::: {.team-member}
 ::: {.member-photo}
-![](images/yash.jpg)
-:::
-::: {.member-name}
-[Yash Mali](https://yashm8.github.io/)
-:::
-::: {.member-role}
-Co-president
-:::
-:::
-
-::: {.team-member}
-::: {.member-photo}
 ![](images/leia.jpg)
 :::
 ::: {.member-name}
 Leia Chen
 :::
 ::: {.member-role}
-VP of Marketing
+President
 :::
 :::
 
@@ -40,15 +28,15 @@ Treasurer
 :::
 :::
 
-::: {.team-member}
-::: {.member-photo}
-![](images/irene.jpeg)
+::: {.team-member .coming-soon}
+::: {.member-photo .placeholder-photo}
+?
 :::
 ::: {.member-name}
-Irene Berezin
+Coming Soon
 :::
 ::: {.member-role}
-VP of Logistics
+New members to be announced
 :::
 :::
 
