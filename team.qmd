@@ -35,9 +35,6 @@ Treasurer
 ::: {.member-name}
 Coming Soon
 :::
-::: {.member-role}
-New members to be announced
-:::
 :::
 
 :::
